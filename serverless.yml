@@ -1,0 +1,21 @@
+# serverless.yml
+
+service: lets-learning
+
+provider:
+  name: aws
+
+  runtime: nodejs10.x
+
+  stage: dev
+
+  region: eu-west-1
+
+functions:
+  app:
+    handler: index.handler
+
+    events:
+      - http: ANY /
+
+      - http: "ANY {proxy+}"
