@@ -146,7 +146,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lets-learning/dev/1578787608418-2020-01-12T00:06:48.418Z/lets-learning.zip"
+          "S3Key": "serverless/lets-learning/dev/1578860407741-2020-01-12T20:20:07.741Z/lets-learning.zip"
         },
         "FunctionName": "lets-learning-dev-app",
         "Handler": "index.handler",
@@ -165,14 +165,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "AppLambdaVersionP01rKvgUTcjA3kT3EFXYjKzTkIp5MIHgE7PF9ykrQ": {
+    "AppLambdaVersionlUgHSsXTF0WiJKiU4Oa2rbQR8sO5acgsD6iJb3jk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "HsckRGtBBpFIK/9b9NN9CGH7Msuh5jsqtMLp3sFt+9k="
+        "CodeSha256": "GNqClePZAAksUscI8w0hckQCFyCTVA7Mt/RIAw0Kj6I="
       }
     },
     "ApiGatewayRestApi": {
@@ -311,7 +311,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1578787604173": {
+    "ApiGatewayDeployment1578860396631": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -378,7 +378,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersionP01rKvgUTcjA3kT3EFXYjKzTkIp5MIHgE7PF9ykrQ"
+        "Ref": "AppLambdaVersionlUgHSsXTF0WiJKiU4Oa2rbQR8sO5acgsD6iJb3jk"
       }
     },
     "ServiceEndpoint": {
