@@ -160,7 +160,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/lets-learning/dev/1578860407741-2020-01-12T20:20:07.741Z/lets-learning.zip"
+                "S3Key": "serverless/lets-learning/dev/1578866277388-2020-01-12T21:57:57.388Z/lets-learning.zip"
               },
               "FunctionName": "lets-learning-dev-app",
               "Handler": "index.handler",
@@ -179,14 +179,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "AppLambdaVersionlUgHSsXTF0WiJKiU4Oa2rbQR8sO5acgsD6iJb3jk": {
+          "AppLambdaVersionknBV5Oo5ckvUq85lrJrjf7osG6Fhcx8KDBCdFC2LVs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "GNqClePZAAksUscI8w0hckQCFyCTVA7Mt/RIAw0Kj6I="
+              "CodeSha256": "7dkuzPTrVfnf/cyYWIpdsRlf365GHaIWA/dZ5FoMuQU="
             }
           },
           "ApiGatewayRestApi": {
@@ -325,7 +325,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1578860396631": {
+          "ApiGatewayDeployment1578866267662": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -392,7 +392,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionlUgHSsXTF0WiJKiU4Oa2rbQR8sO5acgsD6iJb3jk"
+              "Ref": "AppLambdaVersionknBV5Oo5ckvUq85lrJrjf7osG6Fhcx8KDBCdFC2LVs"
             }
           },
           "ServiceEndpoint": {
@@ -507,7 +507,7 @@
         "timeout": 6,
         "runtime": "nodejs10.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionlUgHSsXTF0WiJKiU4Oa2rbQR8sO5acgsD6iJb3jk"
+        "versionLogicalId": "AppLambdaVersionknBV5Oo5ckvUq85lrJrjf7osG6Fhcx8KDBCdFC2LVs"
       }
     },
     "serviceFilename": "serverless.yml",
@@ -515,7 +515,7 @@
     "artifact": "C:\\Users\\Joe\\Desktop\\FinalYearProject\\letsLearning\\lets-learning\\.serverless\\lets-learning.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/lets-learning/dev/1578860407741-2020-01-12T20:20:07.741Z",
+    "artifactDirectoryName": "serverless/lets-learning/dev/1578866277388-2020-01-12T21:57:57.388Z",
     "artifact": "lets-learning.zip"
   }
 }

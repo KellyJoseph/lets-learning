@@ -1,5 +1,7 @@
 var express = require("express");
 var router = express.Router();
+const kanjiHandler = require("./handlers/kanjiHandler");
+const usersHandler = require("./handlers/usersHandler");
 
 router.use(function timeLog(req, res, next) {
   console.log("Time: ", Date.now());
@@ -11,11 +13,14 @@ router.get("/", function(req, res) {
 });
 
 router.get("/getkanji", function(req, res) {
-  res.send("kanji list");
+  //res.send("kanji list");
+  response = kanjiHandler.getAllKanji;
+  res.send(response);
 });
 
-router.get("/getuser", function(req, res) {
-  res.send("User info");
+router.post("/register", function(req, res) {
+  response = usersHandler.register(req);
+  res.send(response);
 });
 
 module.exports = router;
