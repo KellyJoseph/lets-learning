@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lambda-express": "^0.1.5",
     "serverless-http": "^2.3.0"
   }
